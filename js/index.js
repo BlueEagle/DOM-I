@@ -38,5 +38,41 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
+let logo = document.getElementById("logo-img")
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+// Selectors
+const navLinks = document.querySelectorAll('nav a')
+console.log(navLinks)
+
+const ctaH1 = document.querySelector('.cta h1')
+const ctaButton = document.querySelector('.cta button')
+const ctaImgSrc = document.querySelector('.cta img').src
+console.log(ctaH1)
+console.log(ctaButton)
+console.log(ctaImgSrc)
+
+const mainContentFeatures = document.querySelectorAll('.top-content .text-content h4')[0]
+const mainContentFeaturesContent = document.querySelectorAll('.top-content .text-content p')[0]
+const mainContentAbout = document.querySelectorAll('.top-content .text-content h4')[1]
+const mainContentAboutContent = document.querySelectorAll('.top-content .text-content p')[1]
+const mainContentMiddleImageSource = document.querySelector('#middle-img').src
+const mainContentServices = document.querySelectorAll('.bottom-content .text-content h4')[0]
+const mainContentServicesContent = document.querySelectorAll('.bottom-content .text-content p')[0]
+const mainContentProduct = document.querySelectorAll('.bottom-content .text-content h4')[1]
+const mainContentProductContent = document.querySelectorAll('.bottom-content .text-content p')[1]
+const mainContentVision = document.querySelectorAll('.bottom-content .text-content h4')[2]
+const mainContentVisionContent = document.querySelectorAll('.bottom-content .text-content p')[2]
+console.log(mainContentFeatures)
+console.log(mainContentFeaturesContent)
+console.log(mainContentAbout)
+console.log(mainContentAboutContent)
+console.log(mainContentMiddleImageSource)
+console.log(mainContentServices)
+console.log(mainContentServicesContent)
+console.log(mainContentProduct)
+console.log(mainContentProductContent)
+console.log(mainContentVision)
+console.log(mainContentVisionContent)
+
