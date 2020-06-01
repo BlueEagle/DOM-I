@@ -76,3 +76,15 @@ console.log(mainContentProductContent)
 console.log(mainContentVision)
 console.log(mainContentVisionContent)
 
+
+const contactH4 = document.querySelector('.contact h4')
+const addressP = document.querySelectorAll('.contact p')[0]
+const phoneP = document.querySelectorAll('.contact p')[1]
+const emailP = document.querySelectorAll('.contact p')[2]
+console.log(contactH4)
+console.log(addressP)
+console.log(phoneP)
+console.log(emailP)
+
+const footerP = document.querySelector('footer p')
+console.log(footerP)
