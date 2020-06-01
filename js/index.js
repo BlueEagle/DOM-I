@@ -52,24 +52,42 @@ navLinks[4].textContent = siteContent.nav["nav-item-5"]
 navLinks[5].textContent = siteContent.nav["nav-item-6"]
 // console.log(navLinks)
 
+const headerImage = document.querySelector('header img')
+headerImage.src = siteContent.nav["img-src"]
+// console.log(headerImage)
+
 const ctaH1 = document.querySelector('.cta h1')
+ctaH1.textContent = siteContent.cta.h1
 const ctaButton = document.querySelector('.cta button')
-const ctaImgSrc = document.querySelector('.cta img').src
-console.log(ctaH1)
-console.log(ctaButton)
-console.log(ctaImgSrc)
+ctaButton.textContent = siteContent.cta.button
+const ctaImgSrc = document.querySelector('#cta-img')
+ctaImgSrc.src = siteContent.cta["img-src"]
+// console.log(ctaH1)
+// console.log(ctaButton)
+// console.log(ctaImgSrc)
 
 const mainContentFeatures = document.querySelectorAll('.top-content .text-content h4')[0]
+mainContentFeatures.textContent = siteContent["main-content"]["features-h4"]
 const mainContentFeaturesContent = document.querySelectorAll('.top-content .text-content p')[0]
+mainContentFeaturesContent.textContent = siteContent["main-content"]["features-content"]
 const mainContentAbout = document.querySelectorAll('.top-content .text-content h4')[1]
+mainContentAbout.textContent = siteContent["main-content"]["about-h4"]
 const mainContentAboutContent = document.querySelectorAll('.top-content .text-content p')[1]
-const mainContentMiddleImageSource = document.querySelector('#middle-img').src
+mainContentAboutContent.textContent = siteContent["main-content"]["about-content"]
+const mainContentMiddleImageSource = document.querySelector('#middle-img')
+mainContentMiddleImageSource.src = siteContent["main-content"]["middle-img-src"]
 const mainContentServices = document.querySelectorAll('.bottom-content .text-content h4')[0]
+mainContentServices.textContent = siteContent["main-content"]["services-h4"]
 const mainContentServicesContent = document.querySelectorAll('.bottom-content .text-content p')[0]
+mainContentServicesContent.textContent = siteContent["main-content"]["services-content"]
 const mainContentProduct = document.querySelectorAll('.bottom-content .text-content h4')[1]
+mainContentProduct.textContent = siteContent["main-content"]["product-h4"]
 const mainContentProductContent = document.querySelectorAll('.bottom-content .text-content p')[1]
+mainContentProductContent.textContent = siteContent["main-content"]["product-content"]
 const mainContentVision = document.querySelectorAll('.bottom-content .text-content h4')[2]
+mainContentVision.textContent = siteContent["main-content"]["vision-h4"]
 const mainContentVisionContent = document.querySelectorAll('.bottom-content .text-content p')[2]
+mainContentVisionContent.textContent = siteContent["main-content"]["vision-content"]
 console.log(mainContentFeatures)
 console.log(mainContentFeaturesContent)
 console.log(mainContentAbout)
